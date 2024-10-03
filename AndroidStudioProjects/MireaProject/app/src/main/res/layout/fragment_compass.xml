@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Compass">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Определение направления на север с помощью датчика магнитного поля"
+        android:textSize="25sp"/>
+
+    <ImageView
+        android:id="@+id/compass_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/compass_arrow"
+        android:scaleType="centerInside"
+        android:layout_gravity="center"
+        android:layout_marginBottom="150dp"/>
+</FrameLayout>

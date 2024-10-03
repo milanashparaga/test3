@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_data"
+            android:title="Data"
+            />
+        <item
+            android:id="@+id/nav_web"
+            android:title="Web"
+            />
+        <item
+            android:id="@+id/nav_worker"
+            android:title="Worker"
+            />
+        <item
+            android:id="@+id/nav_compass"
+            android:title="Compass"
+            />
+        <item
+            android:id="@+id/nav_camera"
+            android:title="Camera"
+            />
+        <item
+            android:id="@+id/nav_microphone"
+            android:title="Microphone"
+            />
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            />
+        <item
+            android:id="@+id/nav_workingwithfiles"
+            android:title="WorkingWithFiles"
+            />
+        <item
+            android:id="@+id/nav_networkresource"
+            android:title="NetworkResource"
+            />
+        <item
+            android:id="@+id/nav_shop"
+            android:title="Shop"
+            />
+    </group>
+</menu>
