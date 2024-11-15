@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали рецепта</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <nav class="w3-bar w3-black">
+            <a href="/" class="w3-bar-item w3-button">Главная страница</a>
+            <a href="/about/" class="w3-bar-item w3-button">О сайте</a>
+        </nav>
+    </header>
+    <h1>{{ recipe.name }}</h1>
+    <h2>Ингредиенты:</h2>
+    <ul>
+        {% for recipe_ingredient in recipe.recipeingredient_set.all %}
+            <li>{{ recipe_ingredient.ingredient.name }}: {{ recipe_ingredient.quantity }} {{ recipe_ingredient.unit }}</li>
+        {% endfor %}
+    </ul>
+    <p><strong>Общий вес блюда: </strong>{{ recipe.get_total_weight }} г</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="w3-container w3-black w3-padding-16">
+        <p>&copy; 2024 Рецепты. Все права защищены лично Миланой(нет).</p>
+    </footer>
+</body>
+</html>

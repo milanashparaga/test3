@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Описание страницы">
+    <title>{{ title }}</title>
+    <link rel="icon" href="fav.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <header>
+        <nav class="w3-bar w3-black">
+            <a href="/" class="w3-bar-item w3-button">Главная страница</a>
+            <a href="about/" class="w3-bar-item w3-button">О сайте</a>
+        </nav>
+    </header>
+    <main>
+        <h1>{{ title }}</h1>
+        <div>
+            <h2>Ингредиенты:</h2>
+            <ul>
+                {% for ingredient in ingredients %}
+                    <li>{{ ingredient.name }}</li>
+                {% empty %}
+                    <li>Нет доступных ингредиентов.</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </main>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="w3-container w3-black w3-padding-16">
+        <p>&copy; 2024 Рецепты. Все права защищены лично Миланой(нет).</p>
+    </footer>
+</body>
+</html>
